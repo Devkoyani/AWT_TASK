@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Form</title>
+
+    <style type="text/css">
+      body {
+        font-family: Arial;
+        font-size: 10pt;
+      }
+      table {
+        border: 1px solid #ccc;
+        border-collapse: collapse;
+      }
+      table th {
+        background-color: #f7f7f7;
+        color: #333;
+        font-weight: bold;
+      }
+      table th,
+      table td {
+        padding: 5px;
+        border-color: #ccc;
+      }
+      input[type="button"] {
+        background-color: #08f;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <form id="form">
+      <label for="name">Student Name:</label>
+      <input type="text" id="name" name="name" required /><br /><br />
+
+      <label for="id">Student ID:</label>
+      <input type="text" id="id" name="id" required /><br /><br />
+
+      <label for="email">Student E-mail:</label>
+      <input type="email" id="email" name="email" required /><br /><br />
+
+      <label for="phone">Phone No.:</label>
+      <input type="tel" id="phone" name="phone" required /><br /><br />
+
+      <input type="submit" class="register-btn" id="submit" />
+      <br><br><br>
+    </form>
+
+    <table
+      id="tblCustomers"
+      cellpadding="0"
+      cellspacing="0"
+      border="1"
+      style="display: none"
+    >
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>E-mail</th>
+          <th>Phone No.</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <script src="DOM_StudentForm.js"></script>
+    </body>
+</html>
